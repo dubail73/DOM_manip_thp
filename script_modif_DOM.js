@@ -92,28 +92,3 @@ changeLogoName();
     });
   }
   
-  // Appeler la fonction pour appliquer les changements
-  changeViewButtons();
-
-  function moveThirdCard() {
-    // Sélectionner la première row (celle qui contient les cartes actuelles)
-    let firstRow = document.querySelector(".row");
-  
-    // Sélectionner la troisième carte (celle qui contient JS)
-    let thirdCard = firstRow.children[2]; // La 3ème carte (index 2)
-  
-    // Créer une nouvelle div avec la classe "row"
-    let newRow = document.createElement("div");
-    newRow.classList.add("row");
-  
-    // Ajouter cette nouvelle div à la page après la première row
-    firstRow.parentNode.insertBefore(newRow, firstRow.nextSibling);
-  
-    // Déplacer la 3ème carte vers la nouvelle div
-    newRow.appendChild(thirdCard);
-  }
-  
-  // Appeler la fonction pour effectuer les changements
-  moveThirdCard();
-  
-  
